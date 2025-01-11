@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* Centering the content in the middle of the page */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* Styling for the name with a different font */
+.name {
+  font-family: "Trirong", serif; /* Change to a different font */
+  font-size: 3em; /* Larger font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+#about, #projects, #contact {
+  padding: 20px;
+  background: white;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  margin: 10px 0;
+}
+
+/* Projects block styling */
+.projects-block {
+  display: flex;
+  margin-left: 20px;
+  gap: 20px; /* Space between project boxes */
+  flex-wrap: wrap; /* Wrap projects if needed */
+  margin-top: 20px;
+  padding-right: 20px; /* Added padding to the right side */
+}
+
+.project {
+  background-color: #f4f4f4; /* Red; #f4f4f4 #333;  Dark background for the project blocks */
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 8px;
+  width: 30%; /* Each project box takes up 30% of the width */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  text-align: center; /* Center content */
+}
+
+.project h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.project p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+footer a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6347;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust project layout for smaller screens */
+  .projects-block {
+    flex-direction: column; /* Stack projects vertically */
+    padding-right: 10px; /* Ensure there's padding on right side */
+  }
+  
+  .project {
+    width: 100%; /* Take full width on smaller screens */
+    margin: 10px 0; /* Add some spacing between project blocks */
+  }
+}
